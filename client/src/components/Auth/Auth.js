@@ -22,7 +22,8 @@ function Auth() {
 
     gapi.load('client:auth2', () => {
         gapi.client.init({
-            clientId: "494330259095-s40j8j37haspqcs4fdh1ieivabns3cvm.apps.googleusercontent.com",
+            // Enter your client id here
+            clientId: "***********************************cvm.apps.googleusercontent.com",
             scope: 'email',
         })
     });
@@ -90,7 +91,8 @@ function Auth() {
 
                     <Button className={classes.submit} type="submit" fullWidth variant="contained" color="primary">{isSignUp ? 'Sign Up' : 'Sign In'}</Button>
 
-                    <GoogleLogin clientId="494330259095-s40j8j37haspqcs4fdh1ieivabns3cvm.apps.googleusercontent.com" render={(renderProps) => (
+                            // Enter your client id here
+                    <GoogleLogin clientId="***********************************cvm.apps.googleusercontent.com" render={(renderProps) => (
                         <Button className={classes.googleButton} color="primary" fullWidth onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<Icon />} variant="contained">Google Sign In</Button>
                     )}
                         onSuccess={googleSuccess}
